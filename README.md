@@ -50,6 +50,10 @@ MemeWebsite/
 ## Contributing
 Feel free to fork this repo and improve it! Pull requests are welcome.
 
+## Support the Project ❤️  
+If you like this project, consider supporting me with a donation. It helps keep the project alive!  
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=S9MEFTQLRRD3Q)
+
 ## License
 MIT License
-
