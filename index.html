@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meme Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -19,11 +16,22 @@
     </header>
 
     <main>
-        <section id="hero"></section>
+        <section id="hero">
+            <h1>Welcome to Meme World!</h1>
+            <p>Search for your favorite memes below.</p>
+            <input type="text" id="searchBar" placeholder="Search memes..." onkeyup="filterMemes()">
+        </section>
+
+        <section id="memeGallery" class="gallery"></section>
     </main>
 
-    <div>
-        <p>© 2025 Meme Website. All rights reserved. • Website licensed from and maintained by <a href="https://discord.gg/vDSqmrEeKh" target="_blank">CM Development</a></p>
-    </div>
+    <footer>
+        <p>© 2025 Meme Website. All rights reserved. • Website licensed from and maintained by 
+            <a href="https://discord.gg/vDSqmrEeKh" target="_blank">CM Development</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
