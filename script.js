@@ -7,15 +7,25 @@ window.onload = async () => {
         const memeImages = await response.json();
 
         memeImages.forEach(image => {
+            const fileName = image.split('/').pop().split('.')[0]; // Extract file name as title
             const memeDiv = document.createElement("div");
             memeDiv.className = "meme";
-            memeDiv.innerHTML = `<img src="${image}" alt="${image.split('/').pop()}">`;
+
+            memeDiv.innerHTML = `
+                <h3>${fileName}</h3>
+                <img src="${image}" alt="${fileName}">
+                <a href="${image}" download="${fileName}">
+                    <button class="download-btn">Download</button>
+                </a>
+            `;
+
             memeGallery.appendChild(memeDiv);
         });
     } catch (error) {
         console.error("Error loading memes:", error);
     }
 };
+
 
 // Search
 function filterMemes() {
@@ -27,3 +37,7 @@ function filterMemes() {
         meme.style.display = altText.includes(searchTerm) ? "block" : "none";
     });
 }
+
+document.getElementById("paypalDonate").addEventListener("click", function () {
+    window.open("https://www.paypal.com/donate/?hosted_button_id=S9MEFTQLRRD3Q", "_blank");
+});

@@ -64,6 +64,14 @@ footer {
     margin-top: 20px;
 }
 
+footer a {
+    color: lightblue;
+}
+
+footer a:hover{
+    color: blue;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -102,5 +110,34 @@ footer {
 }
 
 
+.download-btn {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
 
+.download-btn:hover {
+    background-color: black;
+    color: white;
+}
 
+#paypalDonate {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#paypalDonate img {
+    width: 150px; /* Adjust size */
+    transition: transform 0.2s ease-in-out;
+}
+
+#paypalDonate:hover img {
+    transform: scale(1.1);
+}
